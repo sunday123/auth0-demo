@@ -1,0 +1,25 @@
+server:
+  port: 3000
+
+logging:
+  level:
+    root: DEBUG
+    org.springframework.web: DEBUG
+    com.auth0.example: DEBUG
+
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          auth0:
+            client-id: NFdWrbhv7FeqEwNIvs13vBKPiPSlkltd
+            client-secret: 4Jl15AFvoXvrF0Qd1RfQ0llYdfLYRcAG158vM_NVMdwXxoBI9xG2HxVhTosUm5Jg
+            scope:
+              - openid
+              - profile
+              - email
+        provider:
+          auth0:
+            # trailing slash is important!
+            issuer-uri: https://sunday123.us.auth0.com/

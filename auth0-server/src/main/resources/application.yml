@@ -1,0 +1,15 @@
+server:
+  port: 8081
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://sunday123.us.auth0.com/
+auth0:
+  audience: NPhwGWJ7Udr0HScfrA7hvgrGNnPzeA7l
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG
